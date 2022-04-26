@@ -1,0 +1,68 @@
+/* FILE NÀY ĐỂ CSS NHỮNG THUỘC TÍNH CHUNG CỦA CẢ TRANG WEB NGHE */
+* {
+  box-sizing: border-box;
+}
+
+:root {                     /* Chỗ này để định nghĩa màu hay dùng */
+  --primary-color:#53a716;
+  --primary-color-rgba:rgba(83, 167, 22, 0.2);
+  --white-color: #fff;
+  --black-color: #000000;
+  --text-color: #333;
+  --border-color: #dbdbdb;
+}
+
+html {
+  font-family: 'Mulish', sans-serif !important;
+  font-size: 62.5%;
+  border: 0;
+  background-color: #fff;
+  padding-top: 0 !important;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  color: var(--black-color);
+  line-height: 1.4;
+  font-size: 1.4rem;       /* Sử dụng font-size là thuộc tính rem. 10px = 1rem */
+  font-weight: 400;
+  background: var(--white-color);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  line-height: 20px;
+}
+
+
+.wd-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  border-radius: 0;
+  display: inline-block;
+  text-transform: uppercase;
+  border: none;
+  font-weight: 600;
+  background-color: #53a716;
+  color: #fff;
+  font-size: 12px;
+  line-height: 18px;
+  padding: 10px 20px;
+}
+
+.btn:hover {
+  /* animation: ease 0.3s; */
+  background: var(--black-color);
+  color: var(--white-color);
+  cursor: pointer;
+}

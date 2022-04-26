@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/favicon.png"/>
+  <link rel="stylesheet" href="../assets/font/fontawesome-free-6.0.0-web/fontawesome-free-6.0.0-web/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+   <!-- Luôn sử dụng đường dẫn tương đối cho file hình ảnh nghe đồ nghe -->
+  <title>Trang Chủ</title>
+</head>
+<body id="wrapper">
+  <header id="header">
+    <div class="header__site-bottom">
+      <div class="header__container-bottom">
+        <span>Hotline 1900.636.099</span>
+        <span>Miễn phí ship đơn hàng 500.000đ</span>
+        <ul class="header__container-socials">
+          <li class="header__social-items"><a class="header__socials-icon fa-brands fa-facebook" href=""></a></li>
+          <li class="header__social-items"><a class="header__socials-icon fa-brands fa-twitter" href=""></a></li>
+          <li class="header__social-items"><a class="header__socials-icon fa-brands fa-instagram" href=""></a></li>
+        </ul>
+      </div>
+    </div>  
+    <div class="header__site-center">
+      <a class="header__logo wd-center" href="./"><img width="185px" height="30px  " src="../assets/img/wandave-logo.png" alt=""></a>
+      <nav class="header__nav">
+        <ul class="header__nav-container">
+          <li class="header__nav-item"><a class="header__nav-item-link" href="">Trang chủ</a></li>
+          <li class="header__nav-item header__nav-item--menu">
+            <a class="header__nav-item-link" href="">Sản phẩm <i class="fa-solid fa-chevron-down"></i></a>
+                    <!-- Menu section -->
+            <div class="header__menu">
+              <ul class="header__menu-container">
+                <li class="header__menu-item">  <!-- Trái cây-->
+                  <div class="header__menu-title">
+                    <a href="">Trái cây</a>
+                  </div>
+                  <ul class="header__submenu-container">
+                    <li class="header__submenu-item"><a href="">Dưa lưới</a></li>
+                    <li class="header__submenu-item"><a href="">Dâu tây</a></li>
+                    <li class="header__submenu-item"><a href="">Ổi xanh</a></li>
+                    <li class="header__submenu-item"><a href="">Nho tím không hạt</a></li>
+                  </ul>
+                </li>
+                <li class="header__menu-item">  <!-- Rau củ-->
+                  <div class="header__menu-title">
+                    <a href="">Rau củ</a>
+                  </div>
+                  <ul class="header__submenu-container">
+                    <li class="header__submenu-item"><a href="">Rau cải</a></li>
+                    <li class="header__submenu-item"><a href="">Khoai</a></li>
+                    <li class="header__submenu-item"><a href="">Tỏi</a></li>
+                  </ul>
+                </li>
+                <li class="header__menu-item">  <!-- Thịt-->
+                  <div class="header__menu-title">
+                    <a href="">Thịt</a>
+                  </div>  
+                  <ul class="header__submenu-container">
+                    <li class="header__submenu-item"><a href="">Thịt heo</a></li>
+                    <li class="header__submenu-item"><a href="">Thịt bò</a></li>
+                    <li class="header__submenu-item"><a href="">Thịt cừu - dê</a></li>
+                    <li class="header__submenu-item"><a href="">Thịt xay - cắt lát</a></li>
+                    <li class="header__submenu-item"><a href="">Thịt gà - vịt</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="header__nav-item"><a class="header__nav-item-link" href="">Tin tức</a></li>
+          <li class="header__nav-item"><a class="header__nav-item-link" href="">Giới thiệu</a></li>
+          <li class="header__nav-item"><a class="header__nav-item-link" href="">Liên hệ</a></li>
+        </ul>
+      </nav>
+      <div class="header__tools-icon"> <!-- Các icon đăng nhập tìm kiếm... -->
+        <ul class="header__tools-container">
+          <li class="header__tools-item">
+            <a class="header__tools-item-link" href="" data-content="Tìm kiếm"><i class="fa-solid fa-magnifying-glass"></i></a>
+          </li>
+          <li class="header__tools-item">
+            <a class="header__tools-item-link" href="" data-content="Đăng nhập"><i class="fa-regular fa-user"></i></a>
+          </li>
+          <li class="header__tools-item">
+            <a class="header__tools-item-link" href="" data-content="Giỏ hàng"><i class="fa-solid fa-cart-shopping"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <button class="main__up">
+      <i class="fa-solid fa-angles-up"></i>
+    </button>
+    <section class="main__slideshow">   
+      <div class="main__slide-wrapper">
+        <div class="main__slide-item">
+          <input type="radio" name="slider-radio" class="main__slide-radio" id="slide-radio1" checked >
+          <img class="main__slide-img--main main__slide-img" src="../assets/img/slideshow_1.webp" alt="">
+        </div>
+        <div class="main__slide-item">
+          <input type="radio" name="slider-radio" class="main__slide-radio" id="slide-radio2">
+          <img class="main__slide-img" src="../assets/img/slideshow_2.jpg" alt="">
+        </div>
+        <div class="main__slide-nav">
+          <label class="main__slide-label" for="slide-radio1"></label>
+          <label class="main__slide-label" for="slide-radio2"></label>
+        </div>
+      </div>
+    </section>
+    <section class="main__banner-two">
+      <div class="main__banner-container">
+        <div class="main__banner-item">
+          <a class="main__banner-link" href="">
+            <img src="../assets/img/two_banner_two.webp" alt="">
+          </a>
+          <div class="main__banner-content">
+            <h3>Mật ong rừng</h3>
+            <span>Giảm giá 50%</span>
+            <br>
+            <a href="">Mua ngay</a>
+          </div>
+        </div>
+        <div class="main__banner-item">
+          <a class="main__banner-link" href="">
+            <img src="../assets/img/two_banner_two-2.webp" alt="">
+          </a>
+          <div class="main__banner-content">
+            <h3>Giảm Giá 30%</h3>
+            <span>Cho đơn hàng của bạn</span>
+            <br>
+            <a href="">Mua ngay</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main__products">
+      <h2 class="title-section">
+
+      </h2>
+    </section>
+  </main>
+  <footer id="footer">
+    <div class="footer__top">
+      <div class="footer__top-container">
+        <div class="footer__top-item">
+          <div class="footer__top-title">
+            <h4>Giới Thiệu</h4>
+          </div>
+          <div class="footer__top-info">
+            <p>Thực phẩm Organic Wandave chuyên cung cấp các thực phẩm tươi sạch, giá cả phải chăng. Đạt tiêu chuẩn chất lượng</p>
+            <ul>
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                59A Âu cơ, Phường 14, Quận 11, TP. HCM
+              </li>
+              <li>
+                <i class="fa-solid fa-phone"></i>
+                <a rel="nofollow" href="tel:0385942049">0385942049</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                <a rel="nofollow" href="mailto:wandave@gmail.com">wandave@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__top-item">
+          <div class="footer__top-title">
+            <h4>Liên kết</h4>
+          </div>
+          <div class="footer__top-info">
+            <ul>
+              <li>
+                <a href="">Tìm kiếm</a>
+              </li>
+              <li>
+                <a href="">Giới thiệu</a>
+              </li>
+              <li>
+                <a href="">Liên hệ</a>
+              </li>
+              <li>
+                <a href="">Hệ thống cửa hàng</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__top-item">
+          <div class="footer__top-title">
+            <h4>Chính sách</h4>
+          </div>
+          <div class="footer__top-info">
+            <ul>
+              <li>
+                <a href="">Chính sách thanh toán</a>
+              </li>
+              <li>
+                <a href="">Chính sách đổi trả</a>
+              </li>
+              <li>
+                <a href="">Chính sách bảo mật</a>
+              </li>
+              <li>
+                <a href="">Điều khoản sử dụng</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__top-item">
+          <div class="footer__top-title">
+            <h4>Đăng ký nhận khuyến mãi</h4>
+          </div>
+          <div class="footer__top-info">
+            <ul>
+              <li>
+                <p>Hãy là người đầu tiên nhận khuyến mãi lớn!</p>
+              </li>
+              <li>
+                <form action="">
+                  <input type="email" required="required" name="contact[email]" id="contact_email" placeholder="Email">
+                  <button class="btn">Đăng ký</button>
+                </form>                
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__copyright">
+      <div class="footer__cpr-container">
+        <div class="footer__cpr-item">
+          <img src="../assets/img/wandave-logo.png" alt="" class="footer__logo">
+        </div>
+        <div class="footer__cpr-item">
+          <p>© Copyright 2022 By wandave. Powered by Haravan</p>
+        </div>
+        <div class="footer__cpr-item">
+          <img src="../assets/img/pay_copyright.webp" alt="">
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

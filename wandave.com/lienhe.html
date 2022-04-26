@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/favicon.png"/>
+  <link rel="stylesheet" href="../assets/font/fontawesome-free-6.0.0-web/fontawesome-free-6.0.0-web/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/yenngoc.css">
+</head>
+<body>
+  <header id="header">
+    <div class="header__site-top">
+      <div class="header__container-top ">
+        <span>Hotline 1900.636.099</span>
+        <span>Miễn phí ship đơn hàng 500.000đ</span>
+        <ul class="header__container-socials">
+          <li class="header__social-items"><a class="header__socials-icon fa-brands fa-facebook" href=""></a></li>
+          <li class="header__social-items"><a class="header__socials-icon fa-brands fa-twitter" href=""></a></li>
+          <li class="header__social-items"><a class="header__socials-icon fa-brands fa-instagram" href=""></a></li>
+        </ul>
+      </div>
+    </div>  
+    <div class="header__site-center">
+      <a class="header__logo wd-center" href="./"><img width="185px" height="30px  " src="../assets/img/wandave-logo.png" alt=""></a>
+      <nav class="header__nav">
+        <ul class="header__nav-container">
+          <li class="header__nav-item"><a class="header__nav-item-link" href="">Trang chủ</a></li>
+          <li class="header__nav-item header__nav-item--menu">
+            <a class="header__nav-item-link" href="">Sản phẩm <i class="fa-solid fa-chevron-down"></i></a>
+                    <!-- Menu section -->
+            <div class="header__menu">
+              <ul class="header__menu-container">
+                <li class="header__menu-item">  <!-- Trái cây-->
+                  <div class="header__menu-title">
+                    <a href="">Trái cây</a>
+                  </div>
+                  <ul class="header__submenu-container">
+                    <li class="header__submenu-item"><a href="">Dưa lưới</a></li>
+                    <li class="header__submenu-item"><a href="">Dâu tây</a></li>
+                    <li class="header__submenu-item"><a href="">Ổi xanh</a></li>
+                    <li class="header__submenu-item"><a href="">Nho tím không hạt</a></li>
+                  </ul>
+                </li>
+                <li class="header__menu-item">  <!-- Rau củ-->
+                  <div class="header__menu-title">
+                    <a href="">Rau củ</a>
+                  </div>
+                  <ul class="header__submenu-container">
+                    <li class="header__submenu-item"><a href="">Rau cải</a></li>
+                    <li class="header__submenu-item"><a href="">Khoai</a></li>
+                    <li class="header__submenu-item"><a href="">Tỏi</a></li>
+                  </ul>
+                </li>
+                <li class="header__menu-item">  <!-- Thịt-->
+                  <div class="header__menu-title">
+                    <a href="">Thịt</a>
+                  </div>  
+                  <ul class="header__submenu-container">
+                    <li class="header__submenu-item"><a href="">Thịt heo</a></li>
+                    <li class="header__submenu-item"><a href="">Thịt bò</a></li>
+                    <li class="header__submenu-item"><a href="">Thịt cừu - dê</a></li>
+                    <li class="header__submenu-item"><a href="">Thịt xay - cắt lát</a></li>
+                    <li class="header__submenu-item"><a href="">Thịt gà - vịt</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="header__nav-item"><a class="header__nav-item-link" href="">Tin tức</a></li>
+          <li class="header__nav-item"><a class="header__nav-item-link" href="">Giới thiệu</a></li>
+          <li class="header__nav-item"><a class="header__nav-item-link" href="">Liên hệ</a></li>
+        </ul>
+      </nav>
+      <div class="header__tools-icon"> <!-- Các icon đăng nhập tìm kiếm... -->
+        <ul class="header__tools-container">
+          <li class="header__tools-item">
+            <a class="header__tools-item-link" href="" data-content="Tìm kiếm"><i class="fa-solid fa-magnifying-glass"></i></a>
+          </li>
+          <li class="header__tools-item">
+            <a class="header__tools-item-link" href="" data-content="Đăng nhập"><i class="fa-regular fa-user"></i></a>
+          </li>
+          <li class="header__tools-item">
+            <a class="header__tools-item-link" href="" data-content="Giỏ hàng"><i class="fa-solid fa-cart-shopping"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <div class="main_heading-page">
+      <h1>Liên hệ</h1>
+    </div>
+    <div class="main_page-content">
+      <div class="main_form">
+        <div class="main_form-title">
+          <h6>Gửi thắc mắc cho chúng tôi</h6>
+        </div>
+        <form class="main_contact-form" action="/contact" accept-charset="UTF-8" method="post">
+          <input name="form-type" type="hidden" value="contact">
+          <input name="utf8" type="hidden" value="✓">
+          <ul class="main_form-fill">
+            <li>
+              <label for="contactFormName">Họ và tên</label>
+              <input required type="text" placeholder="Nhập tên của bạn" class="contact[name]" id="contactFormName" value> 
+            </li>
+            <li>
+              <label for="contactFormPhone">Số điện thoại</label>
+              <input required type="text" placeholder="Nhập số điện thoại của bạn" class="contact[phone]" id="contactPhone" value>
+            </li>
+            <li>
+              <label for="contactFormEmail">Email</label>
+              <input required type="email" placeholder="Nhập email của bạn" class="contact[Email]" id="contactEmail" value> 
+            </li>
+            <li>
+              <label for="contactFormMassage">Massage</label>
+              <textarea required placeholder="Nội dung..." class="custom-textarea" name="contact[body]" id="contactFormMessage"> </textarea>
+            </li>
+          </ul>
+          <button type="submit" class="main_btn">
+            <span>Gửi liên hệ</span>
+            <i class="main_icon-arrow-right">
+              ::before
+            </i>
+          </button>
+        </form>
+        </div>
+      <div class="main_info">
+        <div class="main_info-title">
+          <h6>Thông tin liên hệ</h6>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum earum eveniet dolorum suscipit nesciunt incidunt animi repudiandae ab at, tenetur distinctio voluptate vel illo similique.
+          </p>
+        </div>
+        <ul class="main_info-list">
+          <li>
+            <span>
+              <i class="main_icon-street-view">
+                ::before
+              </i>
+            </span>
+            <span>
+              <label>Địa chỉ</label>
+              <p>182 Lê đại hành, phường 15, quận 11 TP.HCM</p>
+            </span>
+          </li>
+          <li>
+            <span>
+              <i class="main_icon-phone">
+                ::before
+              </i>
+            </span>
+            <span>
+              <label>Số điện thoại</label>
+              <p>1900.636.099</p>
+            </span>
+          </li>
+          <li>
+            <span>
+              <i class="main_icon-email">
+                ::before
+              </i>
+            </span>
+            <span>
+              <label>Email</label>
+              <p>hi@haravan.com</p>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <footer>
+
+  </footer>
+</body>
+</html>
