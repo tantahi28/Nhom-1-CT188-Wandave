@@ -1,6 +1,125 @@
-.main_heading-page {
-  font-weight: bold;
+main {
+  padding: 0 15px;
+  position: relative;
+}
+#map {
+  width: 100%;
+  margin-bottom: 30px;
+}
+#map iframe {
+  width: 100%;
+  height: var(--height-map);
+  border: none;
+  min-height: 300px;
+}
+
+.main__heading-page {
+  text-align: center;
+}
+.main__page-content {
+  display: flex;
+  
+}
+ul {
+  list-style-type: none;
+}
+.main__form {
+  float: left;
+  width: 50%;
+  padding: 0 20px 0 0;
+}
+.main__info {
+  float: right;
+  width: 50%;
+}
+.main__form h6 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+}
+.main__form form ul li label {
+  margin-bottom: 5px;
+  display: block;
+}
+
+.main__form form ul li input, .main__form form ul li textarea {
+  width: 100%;
+  
+}
+button, input, textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  border-radius: 0px;
+}
+input, textarea {
+  border: 1px solid #e5e5e5;
+  max-width: 100%;
+  padding: 8px 10px;
+  border-radius: 3px;
+  outline: none;
+}
+.main__form label {
+  margin-top: 10px;
+}
+label {
+  cursor: default;
+}
+.main__btn {
+  border: 1px solid #53a716;
+  outline: none;
+  background: #53a716;
+  cursor: pointer;
+  padding: 10px 30px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  white-space: nowrap;
+  user-select: none;
+  position: relative;
+  z-index: 1;
+  border-radius: 3px;
+}
+.main__info h6{
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+  
+}
+h6 {
+  font-size: 12px;
+  line-height: 13px;
   text-transform: uppercase;
-  font-size: 26px;
-  text-align: center !important;
+}
+.main__info-title p {
+  line-height: 21px;
+  margin-bottom: 15px;
+}
+
+
+  
+
+p {
+  margin: 0 0 10px 0;
+  line-height: 20px;
+}
+.main__info ul li span label {
+  font-weight: 500;
+  margin-bottom: 3px;
+  padding-left: 10px;
+}
+.main__info .main__info-list li span p {
+  padding-left: 50px;
+  margin: 0;
+}
+.main__info .main__info-list li span:first-child {
+  width: 20px;
+  margin-right: 10x;
+  font-size: 18px;
+  margin-left: 15px;
 }
