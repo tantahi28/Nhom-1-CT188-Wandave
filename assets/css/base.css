@@ -31,13 +31,20 @@ body {
   background: var(--white-color);
 }
 
+img {
+  display: block;
+}
+
 ul {
   margin: 0;
   padding: 0;
 }
 
-p {
-  line-height: 20px;
+
+
+.wd-container {
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 
@@ -48,6 +55,7 @@ p {
 }
 
 .btn {
+  text-decoration: none;
   border-radius: 0;
   display: inline-block;
   text-transform: uppercase;
@@ -60,8 +68,9 @@ p {
   padding: 10px 20px;
 }
 
+
 .btn:hover {
-  /* animation: ease 0.3s; */
+  transition: 0.3s;
   background: var(--black-color);
   color: var(--white-color);
   cursor: pointer;

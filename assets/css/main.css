@@ -94,7 +94,7 @@
 /* Header Menu section */
 .header__nav-item--menu:hover .header__menu {
   display: block;
-  animation: headerMenuGrowth ease-in-out 0.3s;
+  animation: headerMenuGrowth ease-in-out 0.4s;
   border-top: 2px solid var(--primary-color);
 }
 
@@ -324,9 +324,10 @@
   position: absolute; 
   visibility: hidden;
 }
+
 .main__slide-radio:checked +  img {
   opacity: 1;
-  transition: 0.3s;
+  transition: 0.5s;
   z-index: 10;
 }
 
@@ -336,59 +337,230 @@
   padding-top: 20px;
 }
 
-.main__banner-container {
-  height: 36vh;
+.main__banner-two-container {
   display: flex;
   justify-content: space-between;
   overflow: hidden;
 }
 
-.main__banner-container > .main__banner-item {
-  padding-right: 15px;
+.main__banner-two-item:first-child {
+  margin-right: 16px;
 }
 
-.main__banner-item {
+.main__banner-two-item {
   overflow: hidden;
   position: relative;
 }
 
-.main__banner-link {
-  
-}
-
-.main__banner-link:hover > img {
-  width: 102%;
-}
-
-.main__banner-link > img {
+.main__banner-two-link {
   display: block;
-  width: 100%;
   border-radius: 5px;
+  overflow: hidden;
 }
 
-.main__banner-content {
+@keyframes bannerGrowth {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+.main__banner-two-link:hover > img {
+  transform: scale(1.2);
+  animation: bannerGrowth 0.5s linear;
+}
+
+.main__banner-two-link > img {
+  display: block;
+  transition: 0.4s;
+  width: 100%;
+  border-radius: 5px; 
+}
+
+.main__banner-two-content {
   position: absolute;
   top: 2%;
   left: 8%;
   z-index: 10;
 }
 
-.main__banner-content h3 {
+.main__banner-two-content h3 {
   font-size: 2.4rem;
 }
 
-.main__banner-content span {
+.main__banner-two-content span {
   font-size: 2rem;
 }
 
-.main__banner-content a {
-  background: 0 0;
+.main__banner-two-content a {
+  text-decoration: none;
   font-size: 2rem;
   color: var(--primary-color);
   text-transform: uppercase
 }
 
+/* Main Products Trang chu */
 
+.main__products {
+  margin: 0 72px;
+}
+
+.main__title-section > span {
+  display: flex;
+  align-items: center;
+}
+
+.main__title-section > span::before {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 2px;
+  margin: 0 15px;
+  background-color: var(--primary-color);
+}
+
+.main__title-section > span::after {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 2px;
+  margin: 0 15px; 
+  background-color: var(--primary-color);
+}
+
+.main__products-container {
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+}
+
+.main__products-item {
+  max-width: 20%;
+  flex-basis: 20%;
+  padding: 0 8px;
+  margin-bottom: 16px;
+}
+
+.main__products-content {
+  transition: 0.3s;
+  border-radius: 4px;
+  border: 1px var(--border-color) solid;
+}
+
+.main__products-content:hover {
+  transition: 0.3s;
+  border: 1px var(--primary-color) solid;
+  box-shadow: 2px 0px 10px 0px #ccc;
+}
+
+.main__products-link {
+  display: block;
+  position: relative;
+
+}
+
+.main__products-link > img {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes toLeft{
+  from {
+    right: -10%;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+.main__products-item:hover .main__products-icon-action {
+  display: block;
+  opacity: 1;
+  animation: toLeft 0.5s linear;
+}
+
+.main__products-icon-action {
+  transition: 0.5s;
+  opacity: 0;
+  position: absolute;
+  top: 25%;
+  right: 0;
+}
+
+
+.main__products-cart,
+.main__products-view {
+  display: block;
+  width: 35px;
+  height: 35px;
+  color: #232529;
+  margin: 10px;
+  padding: 0;
+  border: 1px solid var(--border-color);
+  line-height: 35px;
+  border-radius: 50%;
+  box-shadow: 0 0px 10px 0px #ccc;
+}
+
+.main__products-cart:hover,
+.main__products-view:hover {
+  cursor: pointer;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+}
+
+.main__products-detail {
+  padding: 6px;
+  background-color: var(--primary-color-rgba);
+}
+
+.main__products-detail a {
+  display: block;
+  text-decoration: none;
+  color: var(--black-color);
+}
+
+.main__products-title {
+  font-weight: 500;
+}
+
+.main__products-price > span {
+  color: #e70303;;
+}
+
+/* Banner one */
+
+.main__banner-one {
+  position: relative;
+}
+
+.main__banner-one > img {
+  width: 100%;
+}
+
+.main__banner-one-info {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.main__banner-one-title {
+  font-weight: 500;
+  color: var(--white-color);
+  font-size: 5rem;
+  margin-top: 0;
+}
+
+.main__banner-one-descr > p {
+  color: var(--white-color);
+  font-size: 2.6rem;
+}
 
 
 
@@ -397,6 +569,7 @@
 
 /* Footer section */
 #footer {
+  margin-top: 30px;
   background:#f3f3f3 url(../img/background-footer.webp) no-repeat top center;
   background-size: cover;
 }
@@ -488,6 +661,45 @@
   display: block;
   max-width: 185px;
 }
+
+
+/* Main Trang Đăng ký */
+.main__register {
+  background: var(--white-color) url(../img/0425-Vector-Hoa-Qua-ourckq008.jpg) no-repeat top cennter;
+  background-size: cover;
+  max-width: 620px;
+  margin: 35px auto 50px;
+  background: #ffffff;
+  padding: 25px 30px 30px;
+}
+
+.main__register-header {
+  font-weight: 500;
+}
+
+.main__register-form {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  padding: 0 15px;
+}
+
+.main__register-container {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.main__register-item {
+  margin-bottom: 15px;
+
+}
+
+.main__register-item > input {
+  width: 100%;
+  padding: 10px 12px;
+}
+
 
 
 
