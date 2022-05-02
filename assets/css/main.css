@@ -15,7 +15,7 @@
   display: flex;
   margin: 0 62px;
   color: var(--white-color);
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -84,6 +84,7 @@
 .header__nav-item-link:hover {
   color: var(--primary-color);
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .header__nav-item a i {
@@ -190,6 +191,7 @@
 
 .header__menu-title > a:hover,
 .header__submenu-item > a:hover {
+  transition: 0.3s;
   color: var(--primary-color);
 }
 
@@ -224,7 +226,7 @@
   font-size: 1.2rem;
   content: attr(data-content);
   width: 80px;
-  /* height: 20px; */
+  transition: 0.3s;
   display: block;
   position: absolute;
   background-color: var(--black-color);
@@ -235,6 +237,31 @@
   border-radius: 10%;
   text-align: center;
 }
+
+.header__search-dropdown {
+  display: none;
+}
+
+.header__search-content {
+
+}
+
+.header__search-title {
+
+}
+
+.header__search-form {
+
+}
+
+.header__search-inner {
+
+}
+
+.header__search-input {
+
+}
+
 
 
 /* Main */
@@ -257,6 +284,7 @@
 }
 
 .main__up:hover {
+  transition: 0.3s;
   background-color: var(--primary-color);
   color: var(--white-color);
   cursor: pointer;
@@ -306,16 +334,17 @@
 }
 
 .main__slide-label {
-  width: 18px;
-	height: 18px;
+  width: 25px;
+	height: 5px;
 	border: 1px solid grey;
-	border-radius: 50%;
 	display: inline-block;
 	margin: 0 5px;
 	z-index: 100;
 }
 
 .main__slide-label:hover {
+  transition: 0.3s;
+  cursor: pointer;
   background-color: var(--primary-color);
 }
 
@@ -325,7 +354,8 @@
   visibility: hidden;
 }
 
-.main__slide-radio:checked +  img {
+
+.main__slide-radio:checked + .main__slide-item img {
   opacity: 1;
   transition: 0.5s;
   z-index: 10;
@@ -381,12 +411,13 @@
 
 .main__banner-two-content {
   position: absolute;
-  top: 2%;
+  top: 15%;
   left: 8%;
   z-index: 10;
 }
 
 .main__banner-two-content h3 {
+  margin: 0;
   font-size: 2.4rem;
 }
 
@@ -437,9 +468,10 @@
 }
 
 .main__products-item {
+  overflow: hidden;
   max-width: 20%;
   flex-basis: 20%;
-  padding: 0 8px;
+  padding: 0 5px;
   margin-bottom: 16px;
 }
 
@@ -460,6 +492,33 @@
   position: relative;
 
 }
+
+.main__products-sale {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 1.2rem;
+  position: absolute;
+  left: 5%;
+  background: #ff0000;
+  width: 36px;
+  height: 32px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.main__products-sale::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+  border-top: 10px solid #ff0000;
+}
+
 
 .main__products-link > img {
   width: 100%;
@@ -508,6 +567,7 @@
 
 .main__products-cart:hover,
 .main__products-view:hover {
+  transition: 0.3s;
   cursor: pointer;
   color: var(--white-color);
   background-color: var(--primary-color);
@@ -562,6 +622,38 @@
   font-size: 2.6rem;
 }
 
+/* Products stage */
+
+.main__products--slider {
+  width: 1200px;
+  overflow: hidden;
+  /* display: none; */
+  margin: 0 72px;
+}
+
+@keyframes productsSlider {
+  20% {margin-left: 0px;}
+  30% {margin-left: -1185px;}
+  50% {margin-left: -1185px;}
+  60% {margin-left: -2370px;}
+  80% {margin-left: -2370px;}
+}
+
+.main__products-container--slider {
+  display: flex;
+  width: 3555px;
+  margin-left: 0px;
+  animation: productsSlider 60s ease-in infinite;
+}
+
+.main__products-item--slider {
+  flex-basis: initial;
+  width: 222px;
+  padding: 0;
+  margin-right: 15px;
+}
+
+
 
 
 
@@ -603,7 +695,7 @@
   content: "";
   height: 2px;
   width: 50px;
-  background: #53a716;
+  background: var(--primary-color);
   bottom: -4px;
 }
 
@@ -624,6 +716,7 @@
 }
 
 .footer__top-info ul li a:hover {
+  transition: 0.3s;
   color: var(--primary-color);
 }
 
@@ -665,8 +758,6 @@
 
 /* Main Trang Đăng ký */
 .main__register {
-  background: var(--white-color) url(../img/0425-Vector-Hoa-Qua-ourckq008.jpg) no-repeat top cennter;
-  background-size: cover;
   max-width: 620px;
   margin: 35px auto 50px;
   background: #ffffff;
@@ -696,6 +787,40 @@
 }
 
 .main__register-item > input {
+  width: 100%;
+  padding: 10px 12px;
+}
+
+/* Main trang Đăng nhập */
+.main__login {
+  max-width: 620px;
+  margin: 35px auto 50px;
+  background: #ffffff;
+  padding: 25px 30px 30px;
+}
+
+.main__login-header {
+  font-weight: 500;
+}
+
+.main__login-form {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  padding: 0 15px;
+}
+
+.main__login-container {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.main__login-item {
+  margin-bottom: 15px;
+}
+
+.main__login-item > input {
   width: 100%;
   padding: 10px 12px;
 }
