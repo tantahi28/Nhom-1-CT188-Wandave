@@ -647,7 +647,7 @@
   display: flex;
   width: 3555px;
   margin-left: 0px;
-  animation: productsSlider 9s ease-in infinite;
+  animation: productsSlider 18s ease-in infinite;
 }
 
 .main__products-item--slider {
@@ -669,7 +669,7 @@
   flex-grow: 1;
   flex-basis: 25%;
   padding: 0 5px;
-  margin-right: 15px;
+  margin-right: 0 8px;
 }
 
 .main__news-item a {
