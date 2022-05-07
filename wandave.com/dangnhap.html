@@ -30,9 +30,9 @@
       <a class="header__logo wd-center" href="./"><img width="185px" height="30px  " src="../assets/img/wandave-logo.png" alt=""></a>
       <nav class="header__nav">
         <ul class="header__nav-container wd-container">
-          <li class="header__nav-item"><a class="header__nav-item-link" href="">Trang chủ</a></li>
+          <li class="header__nav-item"><a class="header__nav-item-link" href="../wandave.com/index.html">Trang chủ</a></li>
           <li class="header__nav-item header__nav-item--menu">
-            <a class="header__nav-item-link" href="">Sản phẩm <i class="fa-solid fa-chevron-down"></i></a>
+            <a class="header__nav-item-link" href="../wandave.com/sanpham.html">Sản phẩm <i class="fa-solid fa-chevron-down"></i></a>
                     <!-- Menu section -->
             <div class="header__menu">
               <ul class="header__menu-container wd-container">
@@ -72,18 +72,31 @@
               </ul>
             </div>
           </li>
-          <li class="header__nav-item"><a class="header__nav-item-link" href="">Tin tức</a></li>
-          <li class="header__nav-item"><a class="header__nav-item-link" href="">Giới thiệu</a></li>
-          <li class="header__nav-item"><a class="header__nav-item-link" href="">Liên hệ</a></li>
+          <li class="header__nav-item"><a class="header__nav-item-link" href="../wandave.com/tintuc.html">Tin tức</a></li>
+          <li class="header__nav-item"><a class="header__nav-item-link" href="../wandave.com/dangky.html">Đăng ký</a></li>
+          <li class="header__nav-item"><a class="header__nav-item-link" href="../wandave.com/lienhe.html">Liên hệ</a></li>
         </ul>
       </nav>
       <div class="header__tools-icon"> <!-- Các icon đăng nhập tìm kiếm... -->
         <ul class="header__tools-container wd-container">
           <li class="header__tools-item">
             <a class="header__tools-item-link" href="" data-content="Tìm kiếm"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <div class="header__search-dropdown">
+              <div class="header__search-content">
+                <p class="header__search-title">Tìm kiếm</p>
+                <form class="header__search-form" action="">
+                  <div class="header__search-inner">
+                    <input name="q" class="header__search-input" type="text" size="20" placeholder="Tìm kiếm sản phẩm...">
+                  </div>
+                  <button type="submit" class="main__btn-search" id="search-header-btn" aria-label="Tìm kiếm">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
           </li>
           <li class="header__tools-item">
-            <a class="header__tools-item-link" href="" data-content="Đăng nhập"><i class="fa-regular fa-user"></i></a>
+            <a class="header__tools-item-link" href="../wandave.com/dangnhap.html" data-content="Đăng nhập"><i class="fa-regular fa-user"></i></a>
           </li>
           <li class="header__tools-item">
             <a class="header__tools-item-link" href="" data-content="Giỏ hàng"><i class="fa-solid fa-cart-shopping"></i></a>
@@ -102,6 +115,11 @@
         </ul>
         <input class="btn" type="submit" value="Đăng nhập">
       </form>
+      <p class="main__forgot-pass">
+        <a href="" class="main__forgot">Quên mật khẩu</a>
+        <br>
+        hoặc <a href="../wandave.com/dangky.html">Đăng ký</a>
+      </p>
     </div>
   </main>
   <footer id="footer">

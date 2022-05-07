@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/main.css">
+  <script src="../assets/js/main.js" defer ></script>
    <!-- Luôn sử dụng đường dẫn tương đối cho file hình ảnh nghe đồ nghe -->
   <title>Trang Chủ</title>
 </head>
@@ -30,9 +31,9 @@
       <a class="header__logo wd-center" href="./"><img width="185px" height="30px  " src="../assets/img/wandave-logo.png" alt=""></a>
       <nav class="header__nav">
         <ul class="header__nav-container wd-container">
-          <li class="header__nav-item"><a class="header__nav-item-link" href="">Trang chủ</a></li>
+          <li class="header__nav-item"><a class="header__nav-item-link" href="../wandave.com/index.html">Trang chủ</a></li>
           <li class="header__nav-item header__nav-item--menu">
-            <a class="header__nav-item-link" href="">Sản phẩm <i class="fa-solid fa-chevron-down"></i></a>
+            <a class="header__nav-item-link" href="../wandave.com/sanpham.html">Sản phẩm <i class="fa-solid fa-chevron-down"></i></a>
                     <!-- Menu section -->
             <div class="header__menu">
               <ul class="header__menu-container wd-container">
@@ -72,9 +73,9 @@
               </ul>
             </div>
           </li>
-          <li class="header__nav-item"><a class="header__nav-item-link" href="">Tin tức</a></li>
-          <li class="header__nav-item"><a class="header__nav-item-link" href="">Giới thiệu</a></li>
-          <li class="header__nav-item"><a class="header__nav-item-link" href="">Liên hệ</a></li>
+          <li class="header__nav-item"><a class="header__nav-item-link" href="../wandave.com/tintuc.html">Tin tức</a></li>
+          <li class="header__nav-item"><a class="header__nav-item-link" href="../wandave.com/dangky.html">Đăng ký</a></li>
+          <li class="header__nav-item"><a class="header__nav-item-link" href="../wandave.com/lienhe.html">Liên hệ</a></li>
         </ul>
       </nav>
       <div class="header__tools-icon"> <!-- Các icon đăng nhập tìm kiếm... -->
@@ -82,14 +83,13 @@
           <li class="header__tools-item">
             <a class="header__tools-item-link" href="" data-content="Tìm kiếm"><i class="fa-solid fa-magnifying-glass"></i></a>
             <div class="header__search-dropdown">
-              <span class="box-arrow"></span>
               <div class="header__search-content">
                 <p class="header__search-title">Tìm kiếm</p>
                 <form class="header__search-form" action="">
                   <div class="header__search-inner">
                     <input name="q" class="header__search-input" type="text" size="20" placeholder="Tìm kiếm sản phẩm...">
                   </div>
-                  <button type="submit" class="btn-search" id="search-header-btn" aria-label="Tìm kiếm">
+                  <button type="submit" class="header__btn-search" id="search-header-btn" aria-label="Tìm kiếm">
                     <i class="fa-solid fa-magnifying-glass"></i>
                   </button>
                 </form>
@@ -97,7 +97,7 @@
             </div>
           </li>
           <li class="header__tools-item">
-            <a class="header__tools-item-link" href="" data-content="Đăng nhập"><i class="fa-regular fa-user"></i></a>
+            <a class="header__tools-item-link" href="../wandave.com/dangnhap.html" data-content="Đăng nhập"><i class="fa-regular fa-user"></i></a>
           </li>
           <li class="header__tools-item">
             <a class="header__tools-item-link" href="" data-content="Giỏ hàng"><i class="fa-solid fa-cart-shopping"></i></a>
@@ -107,7 +107,7 @@
     </div>
   </header>
   <main id="main">
-    <button class="main__up">
+    <button onclick="toTop();" id="wd-up">
       <i class="fa-solid fa-angles-up"></i>
     </button>
     <section class="main__slideshow">   
@@ -124,6 +124,8 @@
           <label class="main__slide-label" for="slide-radio1"></label>
           <label class="main__slide-label" for="slide-radio2"></label>
         </div>
+        <button type="button" class="wd-next">❮</button>
+        <button type="button" class="wd-prev">❯</button>
       </div>
     </section>
     <section class="main__banner-two">
@@ -162,7 +164,7 @@
         <div class="main__products-item">
           <div class="main__products-content">
             <a class="main__products-link" href="">
-              <img src="../assets/img/dua-luoi.webp" alt="">
+              <img src="../assets/img/dua-luoi.webp" alt="Dưa lưới">
               <div class="main__products-icon-action">
                 <button class="main__products-cart">
                   <i class="fa-solid fa-cart-plus"></i>
@@ -204,7 +206,7 @@
                 <a href="">Dâu tây</a>
               </h3>
               <div class="main__products-price">
-                <span>100,000₫</span>
+                <span>120,000₫</span>
               </div>
             </div>
           </div>
@@ -225,10 +227,10 @@
             </a>
             <div class="main__products-detail">
               <h3 class="main__products-title">
-                <a href="">Dưa lưới</a>
+                <a href="">Bưởi ruột đỏ</a>
               </h3>
               <div class="main__products-price">
-                <span>100,000₫</span>
+                <span>45,000₫</span>
               </div>
             </div>
           </div>
