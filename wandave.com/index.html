@@ -10,16 +10,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
   <script src="../assets/js/main.js" defer ></script>
    <!-- Luôn sử dụng đường dẫn tương đối cho file hình ảnh nghe đồ nghe -->
   <title>Trang Chủ</title>
 </head>
 <body id="wrapper">
   <div class="banner__site-top">
-    <div class="banner__container-top wd-container">
+    <div class="banner__container-top ">
       <span>Hotline 1900.636.099</span>
       <span>Miễn phí ship đơn hàng 500.000đ</span>
-      <ul class="banner__container-socials wd-container">
+      <ul class="banner__container-socials ">
         <li class="banner__social-items"><a class="banner__socials-icon fa-brands fa-facebook" href=""></a></li>
         <li class="banner__social-items"><a class="banner__socials-icon fa-brands fa-twitter" href=""></a></li>
         <li class="banner__social-items"><a class="banner__socials-icon fa-brands fa-instagram" href=""></a></li>
@@ -28,15 +29,40 @@
   </div>  
   <header id="header">
     <div class="header__site-center">
+      <!-- navgation mobile -->
+      <button class="menu-action">
+        <a href="#">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+      </button>
+      <nav class="header__nav--mobile">
+        <div class="header__nav-heading">
+          <a href="../wandave.com/dangnhap.html">
+            <div class="header__nav-content">
+              <i class="fa-solid fa-circle-user"></i>
+              <div class="header__nav-desc">
+                Đăng nhập <br> Nhận nhiều ưu đãi hơn
+              </div>
+            </div>
+          </a>
+        </div>
+        <ul class="header__nav-menu-container">
+          <li><a href="">Trang chủ</a></li>
+          <li><a href="">Sản phẩm</a></li>
+          <li><a href="">Tin tức</a></li>
+          <li><a href="">Liên hệ</a></li>
+          <li><a href="">Giới thiệu</a></li>
+        </ul>
+      </nav>
       <a class="header__logo wd-center" href="./"><img width="185px" height="30px  " src="../assets/img/wandave-logo.png" alt=""></a>
       <nav class="header__nav">
-        <ul class="header__nav-container wd-container">
+        <ul class="header__nav-container ">
           <li class="header__nav-item"><a class="header__nav-item-link" href="../wandave.com/index.html">Trang chủ</a></li>
           <li class="header__nav-item header__nav-item--menu">
             <a class="header__nav-item-link" href="../wandave.com/sanpham.html">Sản phẩm <i class="fa-solid fa-chevron-down"></i></a>
                     <!-- Menu section -->
             <div class="header__menu">
-              <ul class="header__menu-container wd-container">
+              <ul class="header__menu-container ">
                 <li class="header__menu-item">  <!-- Trái cây-->
                   <div class="header__menu-title">
                     <a href="">Trái cây</a>
@@ -81,7 +107,7 @@
       <div class="header__tools-icon"> <!-- Các icon đăng nhập tìm kiếm... -->
         <ul class="header__tools-container wd-container">
           <li class="header__tools-item">
-            <a onclick="displaySearch();" class="header__tools-item-link" href="" data-content="Tìm kiếm"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a onclick="displaySearch();" class="header__tools-item-link action-search" href="#" data-content="Tìm kiếm"><i class="fa-solid fa-magnifying-glass"></i></a>
             <div class="header__search-dropdown">
               <div class="header__search-content">
                 <p class="header__search-title">Tìm kiếm</p>
@@ -106,8 +132,9 @@
       </div>
     </div>
   </header>
+  
   <main id="main">
-    <button onclick="toTop();" id="wd-up">
+    <button  id="wd-up">
       <i class="fa-solid fa-angles-up"></i>
     </button>
     <section class="main__slideshow">   
@@ -136,9 +163,10 @@
           </a>
           <div class="main__banner-two-content">
             <p>Mật ong rừng</p>
-            <h3>Mật ong rừng</h3>
-            <span>Giảm giá 50%</span>
-            <br>
+            <h3>Mật ong rừng
+              <br>
+              <span>Giảm giá 50%</span>
+            </h3>
             <a href="">Mua ngay <i class="fa-solid fa-chevron-right"></i></a>
           </div>
         </div>
@@ -148,9 +176,10 @@
           </a>
           <div class="main__banner-two-content">
             <p>Đồ uống Oganic</p>
-            <h3>Giảm Giá 30%</h3>
-            <span>Cho đơn hàng của bạn</span>
-            <br>
+            <h3>Giảm Giá 30%
+              <br>
+              <span>Cho đơn hàng của bạn</span>
+            </h3>
             <a href="">Mua ngay <i class="fa-solid fa-chevron-right"></i></a>
           </div>
         </div>
@@ -417,12 +446,12 @@
         <a href="" class="btn">Xem ngay</a>
       </div>
     </section>
-    <section class="main__products--slider wd-container">
+    <section class="main__products wd-container">
       <h2 class="main__title-section wd-center">
         <span>BEST SELLER</span>
       </h2>
-      <div class="main__products-container--slider">
-        <div class="main__products-item main__products-item--slider">
+      <div class="main__products-container">
+        <div class="main__products-item main__products-item">
           <div class="main__products-content">
             <a class="main__products-link" href="">
               <img src="../assets/img/dua-luoi.webp" alt="">
@@ -446,7 +475,7 @@
           </div>
         </div>
 
-        <div class="main__products-item  main__products-item--slider">
+        <div class="main__products-item  main__products-item">
           <div class="main__products-content">
             <a class="main__products-link" href="">
               <img src="../assets/img/dau_tay_da_lat.webp" alt="Dâu tây">
@@ -470,7 +499,7 @@
           </div>
         </div>
 
-        <div class="main__products-item  main__products-item--slider">
+        <div class="main__products-item  main__products-item">
           <div class="main__products-content">
             <a class="main__products-link" href="">
               <img src="../assets/img/buoi_da_xanh.webp" alt="">
@@ -494,7 +523,7 @@
           </div>
         </div>
 
-        <div class="main__products-item  main__products-item--slider">
+        <div class="main__products-item  main__products-item">
           <div class="main__products-content">
             <a class="main__products-link" href="">
               <img src="../assets/img/oi_xanh.webp" alt="">
@@ -518,7 +547,7 @@
           </div>
         </div>
 
-        <div class="main__products-item  main__products-item--slider">
+        <div class="main__products-item  main__products-item">
           <div class="main__products-content">
             <a class="main__products-link" href="">
               <img src="../assets/img/oi_xanh.webp" alt="">
@@ -542,245 +571,6 @@
           </div>
         </div>
 
-        <div class="main__products-item  main__products-item--slider">
-          <div class="main__products-content">
-            <a class="main__products-link" href="">
-              <img src="../assets/img/oi_xanh.webp" alt="">
-              <div class="main__products-icon-action">
-                <button class="main__products-cart">
-                  <i class="fa-solid fa-cart-plus"></i>
-                </button>
-                <button class="main__products-view">
-                  <i class="fa-solid fa-eye"></i>
-                </button>
-              </div>
-            </a>
-            <div class="main__products-detail">
-              <h3 class="main__products-title">
-                <a href="">Ổi xanh</a>
-              </h3>
-              <div class="main__products-price">
-                <span>50,000₫</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="main__products-item  main__products-item--slider">
-          <div class="main__products-content">
-            <a class="main__products-link" href="">
-              <img src="../assets/img/oi_xanh.webp" alt="">
-              <div class="main__products-icon-action">
-                <button class="main__products-cart">
-                  <i class="fa-solid fa-cart-plus"></i>
-                </button>
-                <button class="main__products-view">
-                  <i class="fa-solid fa-eye"></i>
-                </button>
-              </div>
-            </a>
-            <div class="main__products-detail">
-              <h3 class="main__products-title">
-                <a href="">Ổi xanh</a>
-              </h3>
-              <div class="main__products-price">
-                <span>50,000₫</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="main__products-item  main__products-item--slider">
-          <div class="main__products-content">
-            <a class="main__products-link" href="">
-              <img src="../assets/img/oi_xanh.webp" alt="">
-              <div class="main__products-icon-action">
-                <button class="main__products-cart">
-                  <i class="fa-solid fa-cart-plus"></i>
-                </button>
-                <button class="main__products-view">
-                  <i class="fa-solid fa-eye"></i>
-                </button>
-              </div>
-            </a>
-            <div class="main__products-detail">
-              <h3 class="main__products-title">
-                <a href="">Ổi xanh</a>
-              </h3>
-              <div class="main__products-price">
-                <span>50,000₫</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="main__products-item  main__products-item--slider">
-          <div class="main__products-content">
-            <a class="main__products-link" href="">
-              <img src="../assets/img/oi_xanh.webp" alt="">
-              <div class="main__products-icon-action">
-                <button class="main__products-cart">
-                  <i class="fa-solid fa-cart-plus"></i>
-                </button>
-                <button class="main__products-view">
-                  <i class="fa-solid fa-eye"></i>
-                </button>
-              </div>
-            </a>
-            <div class="main__products-detail">
-              <h3 class="main__products-title">
-                <a href="">Ổi xanh</a>
-              </h3>
-              <div class="main__products-price">
-                <span>50,000₫</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="main__products-item  main__products-item--slider">
-          <div class="main__products-content">
-            <a class="main__products-link" href="">
-              <img src="../assets/img/oi_xanh.webp" alt="">
-              <div class="main__products-icon-action">
-                <button class="main__products-cart">
-                  <i class="fa-solid fa-cart-plus"></i>
-                </button>
-                <button class="main__products-view">
-                  <i class="fa-solid fa-eye"></i>
-                </button>
-              </div>
-            </a>
-            <div class="main__products-detail">
-              <h3 class="main__products-title">
-                <a href="">Ổi xanh</a>
-              </h3>
-              <div class="main__products-price">
-                <span>50,000₫</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="main__products-item  main__products-item--slider">
-          <div class="main__products-content">
-            <a class="main__products-link" href="">
-              <img src="../assets/img/oi_xanh.webp" alt="">
-              <div class="main__products-icon-action">
-                <button class="main__products-cart">
-                  <i class="fa-solid fa-cart-plus"></i>
-                </button>
-                <button class="main__products-view">
-                  <i class="fa-solid fa-eye"></i>
-                </button>
-              </div>
-            </a>
-            <div class="main__products-detail">
-              <h3 class="main__products-title">
-                <a href="">Ổi xanh</a>
-              </h3>
-              <div class="main__products-price">
-                <span>50,000₫</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="main__products-item  main__products-item--slider">
-          <div class="main__products-content">
-            <a class="main__products-link" href="">
-              <img src="../assets/img/oi_xanh.webp" alt="">
-              <div class="main__products-icon-action">
-                <button class="main__products-cart">
-                  <i class="fa-solid fa-cart-plus"></i>
-                </button>
-                <button class="main__products-view">
-                  <i class="fa-solid fa-eye"></i>
-                </button>
-              </div>
-            </a>
-            <div class="main__products-detail">
-              <h3 class="main__products-title">
-                <a href="">Ổi xanh</a>
-              </h3>
-              <div class="main__products-price">
-                <span>50,000₫</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="main__products-item  main__products-item--slider">
-          <div class="main__products-content">
-            <a class="main__products-link" href="">
-              <img src="../assets/img/oi_xanh.webp" alt="">
-              <div class="main__products-icon-action">
-                <button class="main__products-cart">
-                  <i class="fa-solid fa-cart-plus"></i>
-                </button>
-                <button class="main__products-view">
-                  <i class="fa-solid fa-eye"></i>
-                </button>
-              </div>
-            </a>
-            <div class="main__products-detail">
-              <h3 class="main__products-title">
-                <a href="">Ổi xanh</a>
-              </h3>
-              <div class="main__products-price">
-                <span>50,000₫</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="main__products-item  main__products-item--slider">
-          <div class="main__products-content">
-            <a class="main__products-link" href="">
-              <img src="../assets/img/oi_xanh.webp" alt="">
-              <div class="main__products-icon-action">
-                <button class="main__products-cart">
-                  <i class="fa-solid fa-cart-plus"></i>
-                </button>
-                <button class="main__products-view">
-                  <i class="fa-solid fa-eye"></i>
-                </button>
-              </div>
-            </a>
-            <div class="main__products-detail">
-              <h3 class="main__products-title">
-                <a href="">Ổi xanh</a>
-              </h3>
-              <div class="main__products-price">
-                <span>50,000₫</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="main__products-item  main__products-item--slider">
-          <div class="main__products-content">
-            <a class="main__products-link" href="">
-              <img src="../assets/img/oi_xanh.webp" alt="">
-              <div class="main__products-icon-action">
-                <button class="main__products-cart">
-                  <i class="fa-solid fa-cart-plus"></i>
-                </button>
-                <button class="main__products-view">
-                  <i class="fa-solid fa-eye"></i>
-                </button>
-              </div>
-            </a>
-            <div class="main__products-detail">
-              <h3 class="main__products-title">
-                <a href="">Ổi xanh</a>
-              </h3>
-              <div class="main__products-price">
-                <span>50,000₫</span>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
     <section class="main__news">
@@ -871,7 +661,7 @@
             <h4>Giới Thiệu</h4>
           </div>
           <div class="footer__top-info">
-            <p>Thực phẩm Organic Wandave chuyên cung cấp các thực phẩm tươi sạch, giá cả phải chăng. Đạt tiêu chuẩn chất lượng</p>
+            <p>Thực phẩm Organic Wandave chuyên cung cấp các thực phẩm tươi sạch, <br> giá cả phải chăng. Đạt tiêu chuẩn chất lượng</p>
             <ul>
               <li>
                 <i class="fa-solid fa-location-dot"></i>
