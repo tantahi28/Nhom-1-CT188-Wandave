@@ -302,7 +302,7 @@
 .header__tools-item-link {
   display: block;
   position: relative;
-  padding: 8px 14px;
+  padding: 8px;
 }
 
 .header__tools-item-link:hover::after {
