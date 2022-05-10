@@ -3,8 +3,15 @@ var $$ = document.querySelectorAll.bind(document);
 //######################## Navigation mobile########################
 var menuAction = $('.menu-action');
 var navMobile = $('.header__nav--mobile');
+var buttonClose = $('#btn-close');
+var overlaySite = $('#overlay-site');
 menuAction.onclick = function() {
-  navMobile.classList.toggle('show');
+  navMobile.classList.add('show');
+  overlaySite.classList.add('show');
+}
+buttonClose.onclick = function() {
+  navMobile.classList.remove('show');
+  overlaySite.classList.remove('show');
 }
 
 
@@ -14,6 +21,14 @@ var actionSearch = $('.action-search');
 actionSearch.onclick = function() {
   searchBlock.classList.toggle('show');
 }
+var searchForm = $('.header__search-form');
+var searchInput = $('.header__search-input');
+
+searchForm.onsubmit = function(){
+	if (searchInput.value.length == 0) 
+		return false;
+}
+
 
 //############################ Back to top ################################
 
