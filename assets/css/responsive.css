@@ -78,7 +78,9 @@
     font-size: 1.4rem;
   }
 
-  
+  .main__products-detail {
+    display: block;
+  }
 
   
   
