@@ -135,14 +135,18 @@
     </div>
   </header>
   <main id="main">
+    <button  id="wd-up">
+      <i class="fa-solid fa-angles-up"></i>
+    </button>
     <div class="main__register">
       <h1 class="main__register-header wd-center">Tạo tài khoản</h1>
-      <form class="main__register-form" action="" method="post">
+      <form class="main__register-form" onclick="return frmValidate5(this)" onsubmit="return frmValidate5(this)"  action="" method="post">
         <ul class="main__register-container">
-          <li class="main__register-item"><input required="" type="text" value="" name="customer[first_name]" placeholder="Họ" id="first_name" class="text" size="30"></li>
-          <li class="main__register-item"><input required="" type="text" value="" name="customer[last_name]" placeholder="Tên" id="last_name" class="text" size="30"></li>
-          <li class="main__register-item"><input required="" type="email" value="" placeholder="Email" name="customer[email]" id="email" class="text" size="30"></li>
-          <li class="main__register-item"><input required="" type="password" value="" placeholder="Mật khẩu" name="customer[password]" id="password" class="password text" size="30"></li>
+          <li class="main__register-item"><input required="" type="text" value="" name="name" placeholder="Họ" id="first_name" class="text" size="30"></li>
+          <li class="main__register-item"><input required="" type="text" value="" name="name" placeholder="Tên" id="last_name" class="text" size="30"></li>
+          <li class="main__register-item"><input required="" type="email" value="" placeholder="Email" name="email" id="email" class="text" size="30"></li>
+          <li class="main__register-item"><input required="" type="password" value="" placeholder="Mật khẩu" name="password" id="password" class="password text" size="30"></li>
+          <li class="main__register-item"><input required="" type="password2" value="" placeholder="Nhập lại mật khẩu" name="password2" id="password2" class="password text" size="30"></li>
           <div class="main__register-btn wd-center">
             <input class="btn" type="submit" id="register-now" value="Đăng ký">
           </div>

@@ -1,3 +1,9 @@
+#wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+/* banner top */
 
 .banner__site-top {
   background-color: var(--primary-color);
@@ -315,7 +321,7 @@
   position: absolute;
   background-color: var(--black-color);
   top: 90%;
-  right: -44%;
+  right: -75%;
   border: 2px solid #000;
   z-index: 1000;
   border-radius: 10%;
@@ -394,7 +400,8 @@
 
 /* Main */
 #main {
-  
+  /* display: flex;
+  flex-direction: column; */
 }
 
 /* Back to top */
@@ -446,12 +453,14 @@
 }
 
 .wd-prev {
+  display: none;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   right: 10px;
 }
 .wd-next {
+  display: none;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -589,6 +598,8 @@
 /* Main Products Trang chu */
 
 .main__products {
+  display: flex;
+  flex-direction:column;
   margin: 0 72px;
 }
 
@@ -788,6 +799,8 @@
 /* Tin tức */
 
 .main__news {
+  display: flex;
+  flex-direction: column;
   width: 100%;
 }
 
@@ -879,6 +892,8 @@
 
 /* Footer section */
 #footer {
+  display: flex;
+  flex-direction: column;
   margin-top: 30px;
   background:#f3f3f3 url(../img/background-footer.webp) no-repeat top center;
   background-size: cover;

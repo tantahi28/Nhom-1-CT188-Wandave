@@ -25,8 +25,10 @@ var searchForm = $('.header__search-form');
 var searchInput = $('.header__search-input');
 
 searchForm.onsubmit = function(){
-	if (searchInput.value.length == 0) 
+	if (searchInput.value.length == 0){
+    alert("Hãy nhập từ khóa!!");
 		return false;
+  }
 }
 
 
@@ -46,6 +48,45 @@ backtoTop.onclick = function() {
   window.scrollTo(0, 0); 
 };
 
-//######################### 
-// ######################## Slider #############################
+//########################## Form validation ####################################
+var form = $('form');
+form.onsubmit = function() {
+  return frmValidate5(this);
+}
+function frmValidate5(form) {
+	alert("TEST");
+	let emailReg = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+	if (form.querySelector('input[name="email"]') &&
+		emailReg.test(form.querySelector('input[name="email"]').value) == false){ 
+			alert("Hãy thông tin đúng");
+      return false;
+    }
+
+	if (form.querySelector('input[name="password"]') && 
+		form.querySelector('input[name="password"]').value < 8){
+      alert("Hãy thông tin đúng");
+			return false;
+    } 
+
+	if (form.querySelector('input[name="password2"]') && 
+		form.querySelector('input[name="password2"]').value < 8){
+      alert("Hãy thông tin đúng");
+			return false;
+    } 
+
+	if (form.querySelector('input[name="name"]') && 
+		form.querySelector('input[name="name"]').value < 4) {
+      alert("Hãy thông tin đúng");
+			return false;
+    } 
+
+	if (form.querySelector('input[name="content"]') && 
+		form.querySelector('input[name="content"]').value < 10){
+      alert("Hãy thông tin đúng");
+			return false;
+    } 
+
+	return true;
+}
 
