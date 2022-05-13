@@ -88,4 +88,76 @@ function frmValidate5(form) {
 
 	return true;
 }
+//##################### Cart ################
 
+
+var itemList = {
+  "sp001":{ 
+      "name":"Dưa lưới",
+      "price":100000,
+      "photo":"../assets/img/dua-luoi.webp"
+  },
+  "sp002":{ 
+      "name":"Dâu tây",
+      "price":150000,
+      "photo":"../assets/img/dau_tay_da_lat.webp"
+  },
+  "sp003":{ 
+      "name":"Bắp",
+      "price":10000,
+      "photo":"../assets/img/bap.webp"
+  },
+  "sp004":{ 
+      "name":"Bí đỏ",
+      "price":25000,
+      "photo":"../assets/img/bi_do.webp"
+  },
+  "sp005":{ 
+      "name":"Đậu bắp",
+      "price":25000,
+      "photo":"../assets/img/dau_bap.webp"
+  },
+  "sp006":{ 
+      "name":"Cà chua",
+      "price":30000,
+      "photo":"../assets/img/ca_chua.webp"
+  },
+  "sp007":{ 
+      "name":"Ổi xanh",
+      "price":15000,
+      "photo":"../assets/img/oi_xanh.webp"
+  },
+  "sp008":{ 
+      "name":"Bí xanh",
+      "price":25000,
+      "photo":"../assets/img/bi_xanh.webp"
+  },
+  "sp009":{ 
+      "name":"Cà rốt",
+      "price":25000,
+      "photo":"../assets/img/ca_rot.webp"
+  },
+  "sp010":{ 
+    "name":"Thịt lợn",
+    "price":150000,
+    "photo":"../assets/img/thit-than-lon-que1_d59f721b11bc4d2ba607a9c8f3dcf47f_large.webp"
+  },
+  "sp011":{ 
+    "name":"Thịt bò",
+    "price":250000,
+    "photo":"../assets/img/thit_bo_21d0d4649bfc452cb082396ebd603711_2d31ac695be843f9b8f9252b14cae463_large.webp"
+  }
+}; 
+
+function addCart(productCode) {//console.log('addCart');  
+  let quantity = parseInt($('input[id='+productCode+']').value);
+
+  if(typeof localStorage[productCode] === "undefined"){
+      window.localStorage.setItem(productCode,quantity)
+  } else {
+      let currentQuantity = parseInt(window.localStorage[productCode]);
+      let newQuantity = quantity + currentQuantity > 100 ? 100 : quantity + currentQuantity;
+      window.localStorage.setItem(productCode, newQuantity);
+  }
+
+}
