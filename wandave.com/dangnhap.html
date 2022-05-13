@@ -113,7 +113,7 @@
             <div class="header__search-dropdown">
               <div class="header__search-content">
                 <p class="header__search-title">Tìm kiếm</p>
-                <form class="header__search-form" action="timkiem.html">
+                <form class="header__search-form" onsubmit="return frmValidate5(this)" action="timkiem.html">
                   <div class="header__search-inner">
                     <input name="q" class="header__search-input" type="text" size="20" placeholder="Tìm kiếm sản phẩm...">
                   </div>
@@ -140,7 +140,7 @@
     </button>
     <div class="main__login">
       <h1 class="main__login-header wd-center">Đăng nhập</h1>
-      <form class="main__login-form" action="" method="post">
+      <form class="main__login-form" onsubmit="return frmValidate5(this)" action="" method="post">
         <ul class="main__login-container">
           <li class="main__login-item"><input required="" type="email" value="" name="email" id="customer_email" placeholder="Email" class="text"></li>
           <li class="main__login-item"><input required="" type="password" value="" name="password" id="customer_password" placeholder="Mật khẩu" class="text" size="16"></li>

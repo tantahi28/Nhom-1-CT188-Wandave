@@ -49,12 +49,11 @@ backtoTop.onclick = function() {
 };
 
 //########################## Form validation ####################################
-var form = $('form');
-form.onsubmit = function() {
-  return frmValidate5(this);
-}
+// var formRegister = $('.main__register-form');
+// formRegister.onsubmit = function() {
+//   return frmValidate5(this);
+// }
 function frmValidate5(form) {
-	alert("TEST");
 	let emailReg = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 
 	if (form.querySelector('input[name="email"]') &&
@@ -64,25 +63,25 @@ function frmValidate5(form) {
     }
 
 	if (form.querySelector('input[name="password"]') && 
-		form.querySelector('input[name="password"]').value < 8){
+		form.querySelector('input[name="password"]').value.length < 8){
       alert("Hãy thông tin đúng");
 			return false;
     } 
 
 	if (form.querySelector('input[name="password2"]') && 
-		form.querySelector('input[name="password2"]').value < 8){
+		form.querySelector('input[name="password2"]').value.length < 8){
       alert("Hãy thông tin đúng");
 			return false;
     } 
 
 	if (form.querySelector('input[name="name"]') && 
-		form.querySelector('input[name="name"]').value < 4) {
+		form.querySelector('input[name="name"]').value.length < 4) {
       alert("Hãy thông tin đúng");
 			return false;
     } 
 
 	if (form.querySelector('input[name="content"]') && 
-		form.querySelector('input[name="content"]').value < 10){
+		form.querySelector('input[name="content"]').value.length < 10){
       alert("Hãy thông tin đúng");
 			return false;
     } 

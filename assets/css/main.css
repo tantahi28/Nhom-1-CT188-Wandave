@@ -400,8 +400,7 @@
 
 /* Main */
 #main {
-  /* display: flex;
-  flex-direction: column; */
+  min-height: 50vh;
 }
 
 /* Back to top */
@@ -1087,6 +1086,154 @@
   color: var(--primary-color);
 }
 
+/* Trang gio hang */
+
+.main__cart {
+  padding-top: 30px;
+}
+
+.main__cart-form {
+
+}
+
+.main__cart-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.main__cart-template {
+  padding: 0 15px;
+  flex-basis: 60%;
+}
+
+.main__cart-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-color);
+
+}
+
+.main__cart-count {
+
+}
+
+.main__cart-wrap {
+
+}
+
+.main__cart--no-item {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+.main__cart--no-item a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.main__cart-checkout {
+  flex-basis: 30%;
+  padding:  15px;
+  border: 1px solid var(--border-color);
+}
+
+.main__cart-order {
+
+}
+
+.main__order-title {
+  padding: 10px;
+  border-bottom: 1px solid var(--border-color);
+
+}
+
+.main__order-title h4 {
+  font-size: 2.1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.main__order-total {
+  padding: 15px 0px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.main__order-total p {
+  margin: 0;
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.main__order-total-price {
+  color: red;
+}
+
+.main__order-text {
+  padding: 15px 0;
+}
+
+.main__order-buttons {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.main__order-note {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.main__order-control {
+  width: 100%;
+  resize: none;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.main__order-action {
+
+}
+
+.main__order-btn-checkout {
+  display: block;
+  padding: 10px 15px;
+  border-radius: 3px;
+  background: #53a716;
+  color: #fff;
+  margin-bottom: 15px;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.main__order-action-continue {
+  text-align: center;
+}
+
+.main__order-action-continue a{
+  text-decoration: none;
+  color: var(--black-color);
+}
+
+.main__order-action-continue a:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}
 
 
 

@@ -135,7 +135,61 @@
     </div>
   </header>
 
-  <main class="" id="main"></main>
+  <main id="main">
+    <section class="main__cart">
+      <form class="main__cart-form">
+        <div class="main__cart-container">
+          <div class="main__cart-template">
+            <div class="main__cart-title">
+              <h2>Giỏ hàng:</h2>
+              <span>
+                <span class="main__cart-count">0 Sản phẩm</span>
+              </span>
+            </div>
+            <div class="main__cart-wrap">
+              <p class="main__cart--no-item">
+                Giỏ hàng của bạn đang trống. Mời bạn mua thêm sản phẩm <br>
+                <a href="./index.html"> tại đây.</a>
+              </p>
+            </div>
+          </div>
+          <div class="main__cart-checkout">
+            <div class="main__cart-order">
+              <div class="main__order-title">
+                <h4>Thông tin đơn hàng</h4>
+              </div>
+              <div class="main__order-total">
+                <p>
+                  Tổng tiền: 
+                  <span class="main__order-total-price">0đ</span>
+                </p>
+              </div>
+              <div class="main__order-text">
+                <p>
+                  Phí vận chuyển sẽ được tính ở trang thanh toán.
+                  <br>
+                  Bạn cũng có thể nhập mã giảm giá ở trang thanh toán.
+                </p>
+              </div>
+              <div class="main__order-buttons">
+                <label class="main__order-note" for="note">Ghi chú đơn hàng</label>
+                <textarea class="main__order-control" id="note" name="note" rows="4" placeholder="Ghi chú"></textarea>
+              </div>
+              <div class="main__order-action">
+                <button class="main__order-btn-checkout" name="checkout" type="submit">THANH TOÁN NGAY</button>
+                <p class="main__order-action-continue ">
+                  <a href="">
+                    <i class="fa-solid fa-reply"></i>
+                    Tiếp tục mua hàng 
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+  </main>
 
   <footer id="footer">
     <div class="footer__top">
