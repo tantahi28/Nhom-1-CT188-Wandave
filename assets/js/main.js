@@ -162,8 +162,27 @@ function addCart(productCode) {//console.log('addCart');
   }
 
 }
+function displayCart() {
+  var totalPrice = $('.main__order-total-price');
+  var cartCount = $('.main__cart-count');
+  var total = 0;
+  var count = 0;
+  var itemCart = [];
+  let j=0;
+  for(i=0; i<Object.keys(itemList).length;i++) {
+    if(window.localStorage.getItem(Object.keys(itemList)[i])!==null){
+      itemCart[j] = itemList[Object.keys(itemList)[i]];
+      j++;
+      count = count + parseInt(localStorage.getItem(Object.keys(itemList)[i]));
+      total = total + parseInt(localStorage.getItem(Object.keys(itemList)[i])) * itemCart[j].price;
+    }
+  }
+  console.log(itemCart[1])
+  cartCount.innerText = count + " ";
+  totalPrice.innerText = total + " ";
 
-var cartCount = $('.main__cart-count');
+}
+
 
 
 
