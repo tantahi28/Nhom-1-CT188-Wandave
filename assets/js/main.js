@@ -1,3 +1,4 @@
+//Nguyen Minh Tan 
 var $ = document.querySelector.bind(document);
 var $$ = document.querySelectorAll.bind(document);
 //######################## Navigation mobile########################
@@ -88,7 +89,7 @@ function frmValidate5(form) {
 
 	return true;
 }
-//##################### Cart ################
+//##################### Cart #######################
 
 
 var itemList = {
@@ -161,3 +162,8 @@ function addCart(productCode) {//console.log('addCart');
   }
 
 }
+
+var cartCount = $('.main__cart-count');
+
+
+

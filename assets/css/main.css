@@ -1,3 +1,4 @@
+/* Nguyen Minh Tan */
 #wrapper {
   display: flex;
   flex-direction: column;
@@ -232,7 +233,6 @@
   display: inline-block;
   flex: 1;
   padding: 8px 14px;
-
 }
 
 .header__menu-title {
@@ -1150,7 +1150,7 @@
 }
 
 .main__order-title {
-  padding: 10px;
+  padding: 10px 0;
   border-bottom: 1px solid var(--border-color);
 
 }
@@ -1205,9 +1205,6 @@
   line-height: inherit;
 }
 
-.main__order-action {
-
-}
 
 .main__order-btn-checkout {
   display: block;
@@ -1233,6 +1230,47 @@
 .main__order-action-continue a:hover {
   color: var(--primary-color);
   cursor: pointer;
+}
+/* Các sản phẩm được thêm vào giỏ hàng */
+
+.main__cart-item-container {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.main__cart-item-info {
+  display: flex;
+  padding: 10px;
+}
+
+.item-img img{
+  max-width: 100px;
+}
+
+.item-detail {
+  padding: 0 10px;
+  margin: 0 10px;
+}
+
+.item-title {
+  font-weight: 600;
+}
+
+.item-price {
+
+}
+
+.main__cart-item-qty {
+
+}
+
+.main__cart-item-price {
+
 }
 
 
